@@ -21,6 +21,7 @@ const Films = () => {
   return (
     <div>
       <h1>Welcome to Planets!</h1>
+      <em>Planet is a microfrontend app</em>
       <DataList items={data.map(item => ({ title: item.name, url: item.url }))} />
     </div>
   );
