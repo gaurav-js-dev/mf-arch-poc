@@ -18,4 +18,4 @@ Visit the [Nx Documentation](https://nx.dev) to learn more.
 
 ## Commit message standard
 
-Please use proper commit message standards to push code successfully.
+Please use proper commit message standards to push code successfully. Use `yarn cm` to use prompts.

@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "prepare": "husky install",
-    "cm": "cz"
+    "cm": "git-cz"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +19,7 @@
     "@babel/preset-react": "^7.14.5",
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
+    "@commitlint/cz-commitlint": "^17.4.4",
     "@nrwl/eslint-plugin-nx": "15.4.1",
     "@nrwl/jest": "15.4.1",
     "@nrwl/linter": "15.4.1",
@@ -38,7 +39,7 @@
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1",
     "babel-jest": "28.1.1",
-    "commitizen": "^4.2.6",
+    "commitizen": "^4.3.0",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "~8.15.0",
     "eslint-config-prettier": "8.1.0",
@@ -48,6 +49,7 @@
     "eslint-plugin-react-hooks": "4.6.0",
     "http-server": "^14.1.1",
     "husky": "^8.0.0",
+    "inquirer": "8",
     "jest": "28.1.1",
     "jest-environment-jsdom": "28.1.1",
     "nx": "15.4.1",
@@ -63,7 +65,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "cz-conventional-changelog"
+      "path": "@commitlint/cz-commitlint"
     }
   }
 }
