@@ -14,7 +14,7 @@ const getFilms = async () => {
   return data.results;
 };
 
-const Films = () => {
+export function Films() {
   const { isLoading, data } = useQuery<Array<Film>>('films', getFilms, {
     staleTime: Infinity,
   });
@@ -29,6 +29,6 @@ const Films = () => {
       />
     </div>
   );
-};
+}
 
 export default Films;

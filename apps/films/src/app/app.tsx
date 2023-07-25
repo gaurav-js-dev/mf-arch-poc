@@ -1,7 +1,6 @@
+import { Film, Films } from '@ui';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { Route, Routes } from 'react-router-dom';
-import Film from '../component/Film';
-import Films from '../component/Films';
 
 export function App(props: { queryClient: QueryClient }) {
   return (

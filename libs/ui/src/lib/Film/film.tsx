@@ -17,7 +17,7 @@ const getFilm = async (id: string | undefined) => {
   return data;
 };
 
-const Film = () => {
+export function Film() {
   const { id } = useParams<{ id: string }>();
   const { isLoading, data } = useQuery<Film>(`film/${id}`, () => getFilm(id), {
     staleTime: Infinity,
@@ -30,7 +30,7 @@ const Film = () => {
       <FilmInfo {...data} />
     </Card>
   );
-};
+}
 
 const FilmInfo = (props: Film) => (
   <>
