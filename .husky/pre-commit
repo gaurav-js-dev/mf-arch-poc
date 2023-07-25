@@ -1,5 +1,0 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
-yarn nx affected:test --parallel --max-parallel=3
-yarn nx affected:lint --parallel --max-parallel=3
